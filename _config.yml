@@ -1,0 +1,12 @@
+# Site settings
+title: Antonio Calvente
+email: antcalvente@gmail.com
+description:  Personal blog, sometimes I write about tech stuff or just random
+              ideas I like to share as Software developer in this Tech world.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://antcalvente.github.io" # the base hostname & protocol for your site
+twitter_username: antcalvente
+github_username:  antcalvente
+
+# Build settings
+markdown: kramdown
