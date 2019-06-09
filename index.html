@@ -1,6 +1,8 @@
 ---
 layout: default
+lang: en
 ---
+{% assign posts=site.posts | where:"lang", page.lang %}
 
 <div class="home">
  <div class="top card">
@@ -13,7 +15,7 @@ layout: default
       <span class="card-title">Posts</span>
 
       <ul class="post-list">
-        {% for post in site.posts %}
+        {% for post in posts %}
           <li>
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>            

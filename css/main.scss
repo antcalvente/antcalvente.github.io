@@ -22,6 +22,7 @@ $brand-color:      #EF6C00;
 
 $grey-color:       #37474F;
 $grey-color-light: #fefefe;
+$grey-color-medium: #bbb;
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -95,3 +96,66 @@ $anim-speed: 0.3s;
         "util",
         "site"
 ;
+
+
+/* My edits */
+.site-header {
+
+  .header-bar {
+    height: 50px;
+    width: 100%;
+    background: rgba(205,205,205,.5);
+
+    .header-bar-content {
+      width: 75%;
+      margin: auto;
+
+      .header-title, .header-subtitle, .language-selector {
+        display: block;
+        float: left;
+      }
+
+      .header-title {
+        color: $text-color-white;
+        font-size: 30px;
+        margin: 5px 0 0 0;
+      }
+
+      .header-subtitle {
+        color: $grey-color-light;
+        font-size: 20px;
+        margin: 13px 0 0 50px;
+
+        a {
+          text-decoration: none;
+          color: $grey-color-light;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .header-rss {
+        width: 15px;
+        height: 15px;
+        background: url("../assets/rss.svg") center center no-repeat;
+        display: inline-block;
+      }
+
+      .language-selector {
+        float: right;
+
+        ul li {
+          display: block;
+          margin-left: 5px;
+          float: left;
+        }
+      }
+
+      .language-selector ul li a {
+        color: $grey-color-light;
+      }
+    }
+  }
+}

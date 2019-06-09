@@ -1,15 +1,23 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+  <div class="header-bar">
+    <div class="header-bar-content">
+      <h2 class="header-title">{{ site.title }}</h2>
+      <h2 class="header-subtitle"><a href="/about.html" class="header-about">About</a></h2>
+      <h2 class="header-subtitle"><a href="/feed.xml" class="header-rss"></a></h2>
+      <div class="language-selector">
+        <ul>
+          <li><a href="/index.html">EN</a></li>
+          <li><a href="/indice.html">ES</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
+
+  <div class="wrapper"></div>
 
   <div class="header-badge">
     <a href="{{ site.baseurl }}/">
         <img src="/assets/headshot.jpg" />
     </a>
   </div>
-
 </header>
