@@ -3,7 +3,10 @@ title: Antonio Calvente
 email: antcalvente@gmail.com
 description:  Personal blog, sometimes I write about tech stuff or just random
               ideas I like to share as Software developer in this Tech world.
+description_es: Blog personal, escribo ideas acerca de la tecnología en general o temas que
+              me gustan compartir como Desarrollador de Software en este mundo tecnológico.
 baseurl: "" # the subpath of your site, e.g. /blog
+baseurl_es: "/indice.html"
 url: "http://antcalvente.github.io" # the base hostname & protocol for your site
 twitter_username: antcalvente
 github_username:  antcalvente

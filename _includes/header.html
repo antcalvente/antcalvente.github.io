@@ -2,12 +2,33 @@
   <div class="header-bar">
     <div class="header-bar-content">
       <h2 class="header-title">{{ site.title }}</h2>
-      <h2 class="header-subtitle"><a href="/about.html" class="header-about">About</a></h2>
-      <h2 class="header-subtitle"><a href="/feed.xml" class="header-rss"></a></h2>
+      <h2 class="header-subtitle">
+        {% if page.lang == "en" %}
+          <a href="/about/" class="header-about">About</a>
+        {% else %}
+          <a href="/acerca/" class="header-about">Acerca</a>
+        {% endif %}
+      </h2>
+      <h2 class="header-subtitle">
+        {% if page.lang == "en" %}
+          <a href="/feed.xml">
+        {% else %}
+          <a href="/feed_es.xml">
+        {% endif %}
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="header-rss">
+            <path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"></path>
+          </svg>
+        </a>
+      </h2>
       <div class="language-selector">
         <ul>
-          <li><a href="/index.html">EN</a></li>
-          <li><a href="/indice.html">ES</a></li>
+          {% if page.lang == "en" %}
+            <li><a href="/index.html" class="selected-language">EN</a></li>
+            <li><a href="/indice.html">ES</a></li>
+          {% else %}
+            <li><a href="/index.html">EN</a></li>
+            <li><a href="/indice.html" class="selected-language">ES</a></li>
+          {% endif %}
         </ul>
       </div>
     </div>
@@ -16,7 +37,11 @@
   <div class="wrapper"></div>
 
   <div class="header-badge">
-    <a href="{{ site.baseurl }}/">
+    {% if page.lang == "en" %}
+      <a href="{{ site.baseurl }}/">
+    {% else %}
+        <a href="{{ site.baseurl_es }}/">
+    {% endif %}
         <img src="/assets/headshot.jpg" />
     </a>
   </div>
