@@ -1,7 +1,7 @@
-#Things to do
+# Things to do
 
 
-##Technical:
+### Technical:
 - [ ] Add favicon
 - [ ] Fix Root URL 
 - [ ] Detect user locale to redirect to the correct language
@@ -10,5 +10,5 @@
 - [ ] Update background image
 - [ ] Tune discuss style
 
-##Article ideas:
+### Article ideas:
 - [ ] Insert idea here :)
