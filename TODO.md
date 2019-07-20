@@ -12,3 +12,4 @@
 
 ### Article ideas:
 - [ ] Insert idea here :)
+- [ ] How to configure an alert system for the rasbperry pi temperature
