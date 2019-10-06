@@ -45,4 +45,19 @@
       <img src="/assets/headshot.jpg" />
     </a>
   </div>
+
+  <div class="header-language-suggest" id="header-language-suggest">
+    <span class="header-language-suggest-icon"></span>
+    {% if page.lang == "en" %}
+    <p>
+      Hemos detectado que has seleccionado previamente Inglés,
+      <a id="language-suggest-link">¿deseas ir al artículo en Inglés?</a>
+    </p>
+    {% else %}
+    <p>
+      We have detected that you've previously selected Spanish,
+      <a id="language-suggest-link">do you want to go to the Spanish article instead?</a>
+    </p>
+    {% endif %}
+  </div>
 </header>

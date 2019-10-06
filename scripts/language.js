@@ -7,8 +7,8 @@ window.onload = function () {
     let languageScriptTag = document.getElementById("languageScript");
     let currentLanguage = languageScriptTag.getAttribute('data-currentLanguage');
     if (getCookie("language") !== currentLanguage) {
-        console.log("Probably in the wrong page");
         let alternativeLink = languageScriptTag.getAttribute("data-alternativeLangLink");
-        // TODO display here a small popup with the recommendation page
+        document.getElementById("header-language-suggest").style = "visibility: visible";
+        document.getElementById("language-suggest-link").setAttribute("href", alternativeLink);
     }
 }
