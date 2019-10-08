@@ -2,6 +2,7 @@
 layout: page
 title: Acerca de mí
 permalink: /acerca/
+altLangLink: /about/
 lang: es
 ---
 

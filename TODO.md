@@ -4,8 +4,8 @@
 ### Technical:
 - [ ] Add favicon
 - [X] Fix Root URL
-- [ ] Detect user locale to redirect to the correct language
-- [ ] Add a cookie to detect the last page, so when the users change the language they stay in the same page
+- [X] Detect user locale to redirect to the correct language, missing a fadeIn for the box
+- [X] Add a cookie to detect the last page, so when the users change the language they stay in the same page
 - [ ] Use main image for article instead of the default one
 - [X] Update background image
 - [ ] Tune discuss style
