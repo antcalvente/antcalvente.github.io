@@ -11,7 +11,7 @@ function closeLangCookieDialog(currentLanguage) {
 window.onload = function () {
     let languageScriptTag = document.getElementById("languageScript");
     let currentLanguage = languageScriptTag.getAttribute('data-currentLanguage');
-    if (getCookie("language") !== currentLanguage) {
+    if (getCookie("language") !== "" && getCookie("language") !== currentLanguage) {
         let alternativeLink = languageScriptTag.getAttribute("data-alternativeLangLink");
         document.getElementById("header-language-suggest").style = "visibility: visible";
         document.getElementById("language-suggest-link").setAttribute("href", alternativeLink);
