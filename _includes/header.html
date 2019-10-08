@@ -23,11 +23,11 @@
       <div class="language-selector">
         <ul>
           {% if page.lang == "en" %}
-            <li><a href="/index/" class="selected-language">EN</a></li>
-            <li><a href="/indice/" onclick="changeLangCookie('es')">ES</a></li>
+            <li><a class="selected-language">EN</a></li>
+            <li><a href="{{page.altLangLink}}" onclick="changeLangCookie('es')">ES</a></li>
           {% else %}
-            <li><a href="/index/" onclick="changeLangCookie('en')">EN</a></li>
-            <li><a href="/indice/" class="selected-language">ES</a></li>
+            <li><a href="{{page.altLangLink}}" onclick="changeLangCookie('en')">EN</a></li>
+            <li><a class="selected-language">ES</a></li>
           {% endif %}
         </ul>
       </div>
@@ -47,17 +47,17 @@
   </div>
 
   <div class="header-language-suggest" id="header-language-suggest">
-    <span class="header-language-suggest-icon"></span>
     {% if page.lang == "en" %}
     <p>
-      Hemos detectado que has seleccionado previamente Inglés,
-      <a id="language-suggest-link">¿deseas ir al artículo en Inglés?</a>
+      He detectado que has seleccionado previamente Español,
+      <a id="language-suggest-link">¿deseas ir al artículo en Español?</a>
     </p>
     {% else %}
     <p>
-      We have detected that you've previously selected Spanish,
-      <a id="language-suggest-link">do you want to go to the Spanish article instead?</a>
+      I've detected that you've previously selected English,
+      <a id="language-suggest-link">Do you want to go to the English article?</a>
     </p>
     {% endif %}
+    <div class="header-language-suggest-close" onclick="closeLangCookieDialog('{{page.lang}}')">X</div>
   </div>
 </header>
