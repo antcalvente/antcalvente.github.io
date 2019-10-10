@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: en
-permalink: /index.html
+permalink: /
 altLangLink: /indice/
 ---
 {% assign posts=site.posts | where:"lang", page.lang %}
