@@ -10,7 +10,11 @@
 - [X] Update background image
 - [ ] Tune discuss style
 - [ ] Make background image a gradient at bottom to fussion it with blue color
+- [ ] Add categories to the articles
+- [ ] Be able to sort by categories in an article search page
+- [ ] Compress JS & CSS when generating the bundle
 
 ### Article ideas:
-- [ ] Insert idea here :)
+- [ ] How the blog was done and compression techniques
 - [ ] How to configure an alert system for the rasbperry pi temperature
+- [ ] Internal mobility
