@@ -13,6 +13,8 @@
 - [ ] Add categories to the articles
 - [ ] Be able to sort by categories in an article search page
 - [ ] Compress JS & CSS when generating the bundle
+- [ ] Add social networks share buttons
+- [ ] Implement analytics? 
 
 ### Article ideas:
 - [ ] How the blog was done and compression techniques
