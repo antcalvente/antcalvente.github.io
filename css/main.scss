@@ -126,9 +126,13 @@ $anim-speed: 0.3s;
       }
 
       .header-title {
-        color: $text-color-white;
         font-size: 30px;
         margin: 5px 0 0 0;
+
+        a {
+          color: $text-color-white;
+          text-decoration: none;
+        }
       }
 
       .header-subtitle {

@@ -1,7 +1,15 @@
 <header class="site-header">
   <div class="header-bar">
     <div class="header-bar-content">
-      <h2 class="header-title">{{ site.title }}</h2>
+      <h2 class="header-title">
+        {% if page.lang == "en" %}
+          <a href="/">
+        {% else %}
+          <a href="/indice/">
+        {% endif %}
+          {{ site.title }}
+        </a>
+      </h2>
       <h2 class="header-subtitle">
         {% if page.lang == "en" %}
           <a href="/about/" class="header-about">About</a>
