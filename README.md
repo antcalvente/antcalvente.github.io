@@ -25,7 +25,9 @@ altLangLink: /indice/
       {% endfor %}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe
+        <a href="{{'/feed.xml' | prepend: site.baseurl}}" target="_blank" rel="noopener noreferrer"> via RSS</a>
+    </p>
     </div>
   </div>
 </div>
