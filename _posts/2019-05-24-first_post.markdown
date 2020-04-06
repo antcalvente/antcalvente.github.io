@@ -6,6 +6,7 @@ categories: posts
 comments: true
 lang: en
 altLangLink: /posts/2019/05/24/primer_post.html
+readTime: 1
 ---
 
 

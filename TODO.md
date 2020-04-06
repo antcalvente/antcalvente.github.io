@@ -9,12 +9,14 @@
 - [ ] Use main image for article instead of the default one
 - [X] Update background image
 - [ ] Tune discuss style
-- [ ] Make background image a gradient at bottom to fussion it with blue color
+- [ ] Make background image a gradient at bottom to fusion it with blue color
 - [ ] Add categories to the articles
 - [ ] Be able to sort by categories in an article search page
 - [ ] Compress JS & CSS when generating the bundle
-- [ ] Add social networks share buttons
+- [ ] Add social networks share buttons, it's on disqus, is it enough?
 - [ ] Implement analytics? 
+- [X] Add estimated time of reading
+- [ ] Add a right panel with suggestions of other articles or other sections
 
 ### Article ideas:
 - [ ] How the blog was done and compression techniques

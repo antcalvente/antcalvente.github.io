@@ -12,6 +12,14 @@ layout: default
           <span itemprop="name">{{ page.author }}</span>
         </span>
       {% endif %}
+      • <span itemprop="readTime">
+          {{ page.readTime }}
+          {% if page.lang == 'en' %}
+            minutes read
+          {% else if %}
+            minutos de lectura
+          {% endif %}
+        </span>
     </p>
   </header>
 
