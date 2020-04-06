@@ -131,6 +131,24 @@
 
     .post-content{
         margin-top: 2rem;
+
+        img {
+            display: block;
+            margin: 2rem auto;
+        }
+
+        img[alt*=x-large] {
+            width: 100%;
+            height: 40rem;
+        }
+
+        img[alt*=x-medium] {
+            width: 75%;
+        }
+
+        img[alt*=x-small] {
+            width: 50%;
+        }
     }
 }
 

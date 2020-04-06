@@ -6,7 +6,10 @@ categories: posts
 comments: true
 lang: es
 altLangLink: /posts/2019/05/24/first_post.html
+readTime: 2
+author: Antonio Calvente
 ---
 
+![x-large header](/assets/test.jpg)
 
 Prueba de multi idioma
