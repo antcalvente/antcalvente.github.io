@@ -7,11 +7,16 @@
       <div class="outer">
         {% include header.html %}
 
-        <div class="page-content">
-          <div class="wrapper">
-            {{ content }}
-            <div id="disqus_thread"></div>
+        <div class="page">
+          <div class="page-content">
+            <div class="wrapper">
+              {{ content }}
+              <div id="disqus_thread"></div>
+            </div>
           </div>
+          <aside class="aside-right">
+            {% include aside-right.html %}
+          </aside>
         </div>
 
         {% include footer.html %}

@@ -29,7 +29,9 @@
         background: url('../assets/home.svg') center center no-repeat #fff;
         background-size: 50px 50px;
         display: inline-block;
-        margin-bottom: -140px;        
+        margin-bottom: -110px;
+        margin-right: 45rem;
+        opacity: 0.99;
         overflow: hidden;
         transition: $anim-speed; 
         @extend .z-depth-1;
@@ -41,7 +43,7 @@
             height: 176px;
             width: 176px;
             border-radius: 50%;
-            opacity: 1;
+            opacity: 0.99;
             transition: $anim-speed;        
         }        
     }
@@ -58,9 +60,17 @@
     }
 }
 
-.page-content{ 
-    margin: $spacing-unit auto;   
-    width: 980px;    
+.page {
+    margin: 0 auto;
+    width: 145rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.page-content{
+    width: 100rem;
+    display: inline-flex;
     
     .top{
         
@@ -124,6 +134,53 @@
     }
 }
 
+.aside-right {
+    display: inline-flex;
+    background-color: white;
+    width: 40rem;
+    min-height: 20rem;
+    margin-left: 5rem;
+
+    .aside-right_content {
+        padding: 3rem;
+        width: 100%;
+
+        h3 {
+            margin: 0;
+        }
+
+        .popular-posts {
+            ul {
+                padding: 0;
+
+                li {
+                    margin-top: 3rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: initial;
+                    transition: 0.3s;
+                }
+
+                a:hover {
+                    text-decoration: underline dotted #aaa;
+                }
+
+                img, span {
+                    width: 100px;
+                    height: 50px;
+                    vertical-align: middle;
+                }
+
+                span {
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
 .post{
     .card-content{
         padding: 80px 20px;
@@ -159,6 +216,28 @@
     font-size: 2.6rem;
     padding-bottom: 0.5em;
     font-weight: 300;
+}
+
+@media (max-width: 1500px) {
+    .page {
+        width: 100%;
+    }
+
+    .site-header .header-badge {
+        margin-right: 0;
+    }
+
+    .aside-right {
+        display: none;
+    }
+
+    .page-content {
+        width: 100%;
+
+        .wrapper {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 1050px) {
