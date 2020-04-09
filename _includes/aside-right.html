@@ -1,7 +1,19 @@
+{% assign posts=site.posts | where:"lang", page.lang | sort:"title" %}
+
 <div class="aside-right_content">
+    <div id="searchBar">
+        <h4>Search</h4>
+        <input type="text" onkeyup="searchOnKeyUp(this)">
+        <ul class="results">
+            {% for post in posts %}
+                <li>{{ post.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
     <div class="popular-posts">
         {% if page.lang == "en" %}
-            <h3>Popular posts</h3>
+            <h4>Popular posts</h4>
             <ul>
                 <li>
                     <a href="#">

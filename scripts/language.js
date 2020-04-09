@@ -8,7 +8,7 @@ function closeLangCookieDialog(currentLanguage) {
     changeLangCookie(currentLanguage);
 }
 
-window.onload = function () {
+function loadLanguages() {
     let languageScriptTag = document.getElementById("languageScript");
     let currentLanguage = languageScriptTag.getAttribute('data-currentLanguage');
     if (getCookie("language") !== "" && getCookie("language") !== currentLanguage) {
