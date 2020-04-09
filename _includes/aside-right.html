@@ -6,7 +6,11 @@
         <input type="text" onkeyup="searchOnKeyUp(this)">
         <ul class="results">
             {% for post in posts %}
-                <li>{{ post.title }}</li>
+                <li data-title="{{post.title}}">
+                    <a href="{{post.link}}">
+                        {{ post.title }}
+                    </a>
+                </li>
             {% endfor %}
         </ul>
     </div>
