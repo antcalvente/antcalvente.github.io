@@ -12,7 +12,7 @@ function searchOnKeyUp(inputElement) {
     const listOfResults = resultsElement.getElementsByTagName("li");
     for (let i = 0; i < listOfResults.length; i++) {
         let result = listOfResults[i];
-        if (!result.getAttribute("data-title").toLowerCase().includes(inputValue.toLowerCase())) {
+        if (!result.getAttribute("data-title").toLowerCase().includes(inputElement.value.toLowerCase())) {
             result.style.display = "none";
         } else {
             result.style.display = "block";
