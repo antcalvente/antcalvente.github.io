@@ -18,6 +18,7 @@
 - [X] Add estimated time of reading
 - [X] Add a right panel with suggestions of other articles or other sections
 - [ ] Do truly i18n
+- [ ] Refactor all scss and remove all the extra things from the default template
 
 ### Article ideas:
 - [ ] How the blog was done and compression techniques
