@@ -11,8 +11,9 @@ function searchOnKeyUp(inputElement) {
 
     const listOfResults = resultsElement.getElementsByTagName("li");
     for (let i = 0; i < listOfResults.length; i++) {
-        let result = listOfResults[i];
-        if (!result.getAttribute("data-title").toLowerCase().includes(inputElement.value.toLowerCase())) {
+        const result = listOfResults[i];
+        const titleCategories = result.getAttribute("data-title").concat(result.getAttribute("data-categories"));
+        if (!titleCategories.toLowerCase().includes(inputElement.value.toLowerCase())) {
             result.style.display = "none";
         } else {
             result.style.display = "block";
@@ -21,8 +22,9 @@ function searchOnKeyUp(inputElement) {
 }
 
 function searchOutsideListener(event) {
-    const resultsElement = document.getElementById(searchBarId).getElementsByClassName(resultsClass)[0];
-    if (!resultsElement.contains(event.target) && resultsElement.style.display === "block") {
+    const searchInput = document.getElementById(searchBarId);
+    const resultsElement = searchInput.getElementsByClassName(resultsClass)[0];
+    if (!searchInput.contains(event.target) && !resultsElement.contains(event.target) && resultsElement.style.display === "block") {
         resultsElement.style.display = 'none';
     }
 }

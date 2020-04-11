@@ -8,7 +8,7 @@ lang: es
 link: /posts/2019/05/24/primer_post.html
 altLangLink: /posts/2019/05/24/first_post.html
 readTime: 2
-author: Antonio Calvente
+categories: java, database
 ---
 
 ![x-large header](/assets/test.jpg)
