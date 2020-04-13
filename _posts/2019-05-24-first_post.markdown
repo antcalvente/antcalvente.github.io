@@ -8,7 +8,7 @@ lang: en
 link: /posts/2019/05/24/first_post.html
 altLangLink: /posts/2019/05/24/primer_post.html
 readTime: 2
-categories: java, database
+categoryList: java, database
 ---
 
 ![x-large header](/assets/test.jpg)
