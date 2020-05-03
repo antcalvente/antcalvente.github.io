@@ -19,6 +19,11 @@
 - [X] Add a right panel with suggestions of other articles or other sections
 - [ ] Do truly i18n
 - [ ] Refactor all scss and remove all the extra things from the default template
+- [ ] Add links at the bottom of the images
+- [ ] Be able to open the images to increase their size
+- [ ] Add hover effects on the images and links
+- [ ] Add a button at the bottom to link to the next post
+- [ ] Find the ideal size for the images
 
 ### Article ideas:
 - [ ] How the blog was done and compression techniques
