@@ -280,6 +280,7 @@
 
             img {
                 margin-bottom: 0;
+                width: 75%;
             }
         }
 
@@ -353,10 +354,22 @@
         .wrapper {
             margin: 0 auto;
         }
+
+        .post-content .image-caption {
+            margin: 0;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
 @media (max-width: 1050px) {
+    .page {
+        width: 100%;
+    }
+
     .page-content{
         margin: $spacing-unit 2%;
         width: 96%;
