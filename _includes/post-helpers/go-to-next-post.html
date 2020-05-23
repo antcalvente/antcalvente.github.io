@@ -1,0 +1,11 @@
+<div class="go-to-next-post">
+        {% if page.lang == "en" %}
+            <span class="title">NEXT POST:</span>
+        {% else if %}
+            <span class="title">PRÓXIMO POST:</span>
+        {% endif %}
+    <a href="{{ include.url }}">
+        <span class="description">{{ include.text }}</span>
+        <div class="circle-next">></div>
+    </a>
+</div>

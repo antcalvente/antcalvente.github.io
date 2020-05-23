@@ -3,14 +3,14 @@
 ------------------------------------------------------------*/
 
 .site-header{
-    
-    text-align: center;    
+
+    text-align: center;
 
     .wrapper{
-        
+
         padding-top: 5em;
         padding-bottom: 2em;
-        
+
         .site-title{
             text-decoration: none;
             color: $text-color-white;
@@ -19,8 +19,8 @@
             text-transform: uppercase;
         }
     }
-    
-    
+
+
     .header-badge{
         border-radius: 50%;
         border: 12px #fff solid;
@@ -33,10 +33,10 @@
         margin-right: 45rem;
         opacity: 0.99;
         overflow: hidden;
-        transition: $anim-speed; 
+        transition: $anim-speed;
         @extend .z-depth-1;
-        
-        
+
+
         img{
             object-fit: none; /* Do not scale the image */
             object-position: center; /* Center the image within the element */
@@ -44,19 +44,19 @@
             width: 176px;
             border-radius: 50%;
             opacity: 0.99;
-            transition: $anim-speed;        
-        }        
-    }
-    
-    .header-badge:hover{        
-        transition: $anim-speed;   
-        @extend .z-depth-5;
-        
-        img{         
-            opacity: 0.7;
-            transition: $anim-speed;  
+            transition: $anim-speed;
         }
-        
+    }
+
+    .header-badge:hover{
+        transition: $anim-speed;
+        @extend .z-depth-5;
+
+        img{
+            opacity: 0.7;
+            transition: $anim-speed;
+        }
+
     }
 }
 
@@ -71,24 +71,24 @@
 .page-content{
     width: 100rem;
     display: inline-flex;
-    
+
     .top{
-        
+
         text-align: center;
-        padding: $spacing-unit * 4 $spacing-unit $spacing-unit;       
-        
+        padding: $spacing-unit * 4 $spacing-unit $spacing-unit;
+
         a.email{
             font-size: 2rem;
             text-decoration: none;
             color: $brand-color;
         }
 
-        p.description{            
+        p.description{
             font-size: 2rem;
             text-align: left;
         }
     }
-    
+
     .posts{
         .card-title{
             color: $brand-color;
@@ -96,36 +96,36 @@
             width: 100%;
             border-bottom: $brand-color solid 1px;
         }
-        
+
         .post-list{
             margin:0;
             padding:0;
-            
+
             li{
-                
+
                 padding: 15px 0;
                 border-bottom: #ddd solid 1px;
-                
+
                 .post-meta{
                     float:right;
                     color:#ccc;
                     font-size: 14px;
                 }
-                
+
                 a{
-                   
+
                     text-decoration: none;
                     color:#333;
                     font-size: 21px;
-                    
+
                 }
             }
         }
-        
+
         .rss-subscribe{
             text-align: center;
             margin-top: 15px;
-            
+
             a{
                 text-decoration: none;
                 color:$brand-color;
@@ -256,9 +256,15 @@
             margin: 2rem auto;
         }
 
+        img[alt*=x-medium]:hover,
+        img[alt*=x-small]:hover,
+        .image-caption:hover {
+            opacity: 0.7;
+        }
+
         img[alt*=x-large] {
             width: 100%;
-            height: 40rem;
+            max-height: 40rem;
         }
 
         img[alt*=x-medium] {
@@ -267,6 +273,54 @@
 
         img[alt*=x-small] {
             width: 50%;
+        }
+
+        .image-caption {
+            text-align: center;
+
+            img {
+                margin-bottom: 0;
+            }
+        }
+
+        .go-to-next-post {
+            clear: both;
+            margin-top: 3rem;
+            float: right;
+            line-height: 1rem;
+
+            .title {
+                font-size: 2rem;
+                color: #333;
+                margin: 0;
+                display: block;
+            }
+
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+
+            a:hover {
+                opacity: 0.7;
+            }
+
+            .description {
+                display: inline-flex;
+            }
+
+            .circle-next {
+                width: 4rem;
+                height: 4rem;
+                border: 1px solid #666;
+                border-radius: 50%;
+                display: inline-flex;
+                margin-left: 1rem;
+                font-size: 2.5rem;
+                padding: 1.2rem;
+                color: #666;
+            }
         }
     }
 }
@@ -282,7 +336,7 @@
 
 @media (max-width: 1500px) {
     .page {
-        width: 100%;
+        width: 80%;
     }
 
     .site-header .header-badge {
@@ -303,7 +357,7 @@
 }
 
 @media (max-width: 1050px) {
-    .page-content{  
+    .page-content{
         margin: $spacing-unit 2%;
         width: 96%;
     }
