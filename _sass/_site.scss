@@ -250,6 +250,7 @@
 
     .post-content{
         margin-top: 2rem;
+        position: relative;
 
         img {
             display: block;
@@ -284,10 +285,15 @@
             }
         }
 
-        .go-to-next-post {
+        .go-to-navigation {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .go-to-next-post, .go-to-previous-post {
             clear: both;
             margin-top: 3rem;
-            float: right;
             line-height: 1rem;
 
             .title {
@@ -301,6 +307,7 @@
                 text-decoration: none;
                 display: flex;
                 align-items: center;
+                margin-top: 1rem;
             }
 
             a:hover {
@@ -309,9 +316,10 @@
 
             .description {
                 display: inline-flex;
+                line-height: 2rem;
             }
 
-            .circle-next {
+            .circle-next, .circle-previous {
                 width: 4rem;
                 height: 4rem;
                 border: 1px solid #666;
@@ -321,6 +329,13 @@
                 font-size: 2.5rem;
                 padding: 1.2rem;
                 color: #666;
+            }
+        }
+
+        .go-to-previous-post {
+            .circle-previous {
+                margin-left: 0;
+                margin-right: 1rem;
             }
         }
     }

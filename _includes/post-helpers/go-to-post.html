@@ -1,0 +1,28 @@
+<div class="go-to-navigation">
+    {% if include.previous-url %}
+        <div class="go-to-previous-post">
+            {% if page.lang == "en" %}
+            <span class="title">PREVIOUS POST:</span>
+            {% else if %}
+            <span class="title">POST ANTERIOR:</span>
+            {% endif %}
+            <a href="{{ include.previous-url }}">
+                <div class="circle-previous"><</div>
+                <span class="description">{{ include.previous-text }}</span>
+            </a>
+        </div>
+    {% endif %}
+    {% if include.next-url %}
+        <div class="go-to-next-post">
+                {% if page.lang == "en" %}
+                    <span class="title">NEXT POST:</span>
+                {% else if %}
+                    <span class="title">PRÓXIMO POST:</span>
+                {% endif %}
+            <a href="{{ include.next-url }}">
+                <span class="description">{{ include.next-text }}</span>
+                <div class="circle-next">></div>
+            </a>
+        </div>
+    {% endif %}
+</div>

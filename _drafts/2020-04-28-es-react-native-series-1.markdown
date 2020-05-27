@@ -87,6 +87,5 @@ Por último, en esta primera fase del programa, me resultó gracioso el cómo po
 ```java
 StatusBar.setHidden(true)
 ```  
-
-{% include post-helpers/go-to-next-post.html url="#" text="Añadiendo varios idiomas con I18N" %}
+{% include post-helpers/go-to-post.html previous-url="#" previous-text="Añadiendo varios idiomas con I18N" next-url="#" next-text="Añadiendo varios idiomas con I18N" %}
 <br>
