@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Aplicación React Native desde 0!"
+title:  "¡Aplicación React Native desde 0!"
 date:   2020-04-28 09:00:00 +0200
 categories: posts
 comments: true
 lang: es
-link: /posts/2019/05/24/first_post.html
-altLangLink: /posts/2019/05/24/primer_post.html
+link: /posts/2020/04/28/es-react-native-series-1.html
+altLangLink: /posts/2020/04/28/en-react-native-series-1.html
 readTime: 5
 categoryList: react, reactnative, native
 ---
@@ -26,7 +26,7 @@ file="/assets/reactNativeSeries/Pluralsight_ReactNative.png" alt="Pluralsight Re
 ### Primeros pasos
 Aquí de nuevo, quise tomarme mi tiempo para investigar las posibles soluciones que existen en el mercado para un desarrollo rápido de la app y encontré **Expo**
 {% include post-helpers/image-with-caption.html url="https://expo.io/learn]"
-file="/assets/reactNativeSeries/Expo.png" alt="Pluralsight ReactNative" caption="https://expo.io/learn" %}
+file="/assets/reactNativeSeries/Expo.png" alt="Página principal de Expo" caption="https://expo.io/learn" %}
 <br>
 Tras seguir la instalación e iniciar un repositorio de ejemplo (o bien probando este: [https://snack.expo.io/](https://snack.expo.io/)) pude ver cómo se puede montar un servidor local y conectarse a través de la app Expo ya sea mediante url o código QR (tu dispositivos tienen que estar en la misma red).
 <br>
@@ -74,7 +74,7 @@ Después de tener un mapa mental de cómo quería mi aplicación y cuáles serí
 <br>
 Cabe decir que encontré la documentación de react native bastante aceptable, repleta de ejemplos y que se pueden probar gracias a **Snack**. Para la navegación elegí [Material bottom tab navigator](https://reactnavigation.org/docs/material-bottom-tab-navigator) al dar un buen efecto visual y ser compatible con los iconos de MaterialCommunity.
 ![x-small header](/assets/reactNativeSeries/material-bottom-tabs.gif)
-Y aquí llegó la sorpresa del día :D Al buscar los iconos para la navegación me topé con este repositorio en Github: [https://oblador.github.io/react-native-vector-icons/](https://oblador.github.io/react-native-vector-icons/) el cual muestra más de 3000 iconos de distintos paquetes (AntDesign, Entypo, FontAwesome, Fontisto, Ionicons, MaterialCommunityIcons...). Sin duda una mina de oro y un repositorio a seguir: [https://github.com/oblador/react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
+Y aquí llegó la sorpresa del día :D Al buscar los iconos para la navegación me topé con este repositorio en Github: [https://oblador.github.io/react-native-vector-icons/](https://oblador.github.io/react-native-vector-icons/) el cual muestra más de 3000 iconos de distintos paquetes (AntDesign, Entypo, FontAwesome, Fontisto, Ionicons, MaterialCommunityIcons...). Sin duda una mina de oro y un repositorio a seguir.
 <br>
 <br>
 Tras tener un set de iconos, pasé a crear una paleta de colores para la aplicación. Siguiendo el efecto visual de MaterialBottomTabNavigator, creé 5 colores base, los cuales apliqué de la siguiente forma:
@@ -82,10 +82,11 @@ Tras tener un set de iconos, pasé a crear una paleta de colores para la aplicac
 De esta forma, se evita "hardcodear" los códigos hexadecimales cada vez y, además, evitar errores al copiarlos ya que son bastante similares (por ejemplo en el backgroundColor de la cabecera)
 <br>
 <br>
-Por último, en esta primera fase del programa, me resultó gracioso el cómo poder ocultar la barra superior de Android/iOS. Tras una búsqueda de más de 1 hora me topé con este trozo de código:
+Por último, en esta primera fase del programa, me resultó gracioso el cómo poder ocultar la barra superior de Android/iOS. Tras una búsqueda de más de 1 hora (tened en cuenta que hacía años que no desarrollaba un app móvil) me topé con este trozo de código:
 
 ```java
 StatusBar.setHidden(true)
 ```  
+<br>
 {% include post-helpers/go-to-post.html previous-url="#" previous-text="Añadiendo varios idiomas con I18N" next-url="#" next-text="Añadiendo varios idiomas con I18N" %}
 <br>
